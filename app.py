@@ -4,10 +4,11 @@ import numpy as np
 import pandas as pd
 from obspy import read
 
-st.title("🌍 EthioQuake")
+st.title(" EthioQuake")
 st.write("AI Earthquake Detector for Ethiopia")
 
-model = joblib.load("/content/drive/MyDrive/ethioquake/model.pkl")
+model = joblib.load("model.pkl")
+
 
 uploaded = st.file_uploader("Upload a .mseed seismic file", type=["mseed"])
 
