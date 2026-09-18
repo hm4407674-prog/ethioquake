@@ -258,7 +258,7 @@ Hawassa University, Ethiopia
 
 Interested in:
 
-Artificial Intelligence · Machine Learning · Software Engineering · Geoscience · Research
+Artificial Intelligence · Machine Learning · Software Engineering · Ai Research with real problem. 
 
 ---
 
