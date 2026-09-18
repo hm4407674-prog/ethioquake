@@ -1,4 +1,4 @@
-. EthioQuake
+# EthioQuake
 
 AI-Powered Seismic Event Detection for Ethiopia
 
@@ -10,7 +10,7 @@ The project combines seismic signal processing, feature engineering, and machine
 
 ---
 
-. Project Objective
+# Project Objective
 
 Earthquake monitoring systems must distinguish meaningful seismic events from continuous background noise.
 
@@ -27,7 +27,7 @@ The project is intended as an applied AI and geoscience research project, with a
 
 ---
 
-. Current Results
+# Current Results
 
 Metric| Result
 Test Accuracy| 97%
@@ -41,7 +41,7 @@ Primary Station| IU.FURI, Ethiopia
 
 ---
 
-. System Architecture
+# System Architecture
 
 Seismic Waveforms
         │
@@ -125,7 +125,7 @@ The trained model is evaluated using previously unseen test data to measure its 
 
 ---
 
-. Technology Stack
+# Technology Stack
 
 Programming & Data Science
 
@@ -160,7 +160,7 @@ Development & Version Control
 
 ---
 
-. Project Structure
+# Project Structure
 
 ethioquake/
 │
@@ -183,7 +183,7 @@ ethioquake/
 
 ---
 
-. Getting Started
+# Getting Started
 
 1. Clone the repository
 
@@ -206,7 +206,7 @@ The Streamlit dashboard will then open in your browser.
 
 ---
 
-. Future Development
+# Future Development
 
 EthioQuake is an ongoing research and development project.
 
@@ -226,7 +226,7 @@ Planned improvements include:
 
 ---
 
-. Important Scientific Disclaimer
+# Important Scientific Disclaimer
 
 EthioQuake is currently a research and educational prototype.
 
@@ -236,7 +236,7 @@ Reliable operational deployment would require substantially larger datasets, ind
 
 ---
 
-. Why Ethiopia?
+# Why Ethiopia?
 
 Ethiopia is located within the East African Rift system, an active geological region where seismic activity occurs.
 
@@ -251,7 +251,7 @@ EthioQuake explores how modern machine-learning techniques can be applied to loc
 
 ---
 
- Author.
+# Author
 
 Computer Science Student
 Hawassa University, Ethiopia
@@ -262,7 +262,7 @@ Artificial Intelligence · Machine Learning · Software Engineering · Geoscienc
 
 ---
 
- License.
+# License
 
 This project is intended for educational and research purposes.
 
@@ -270,7 +270,7 @@ A formal open-source license can be added as the project develops.
 
 ---
 
- .Project Vision
+ # Project Vision
 
 «Building practical AI systems for real-world problems in Ethiopia.»
 
