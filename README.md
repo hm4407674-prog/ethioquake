@@ -30,9 +30,9 @@ The project is intended as an applied AI and geoscience research project, with a
 # Current Results
 
 Metric| Result
-Test Accuracy| 97%
-Total Waveforms| 305
-Earthquake Waveforms| 80
+Test Accuracy| 81.97%
+Total Waveforms| 304
+Earthquake Waveforms| 79
 Background Noise Waveforms| 225
 Classifier| Random Forest
 Primary Station| IU.FURI, Ethiopia
