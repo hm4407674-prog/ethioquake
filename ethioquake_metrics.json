@@ -1,0 +1,13 @@
+{
+  "random_forest_accuracy": 82.0,
+  "cnn_test_accuracy": 100.0,
+  "test_samples": 48,
+  "total_params": 43585,
+  "dataset": "304 real waveforms \u2192 4308 windows \u2192 236 labeled windows",
+  "earthquake_events": [
+    "2023-01-09 M4.7",
+    "2023-01-09 M4.9"
+  ],
+  "station": "IU.FURI (Ethiopia)",
+  "source": "EarthScope (IRIS)"
+}
