@@ -104,7 +104,7 @@ if uploaded_file is not None:
     np.std(data),                                     # Standard deviation
     np.max(data) - np.min(data),                      # Peak-to-peak
 ]])          # Peak amplitude
-            ]])
+    
             try:
                 rf_pred = rf_model.predict(features)[0]
                 rf_label = "🚨 EARTHQUAKE" if rf_pred == 1 else "✅ NOISE"
