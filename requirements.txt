@@ -1,6 +1,7 @@
 streamlit
-obspy
-scikit-learn
-pandas
 numpy
+pandas
+scikit-learn
+obspy
 joblib
+tensorflow
