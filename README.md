@@ -279,3 +279,50 @@ EthioQuake is an exploration of how computer science, machine learning, and seis
 ---
 
 Built with Python and machine learning.
+
+##  Deep Learning Extension: 1D CNN for Seismic Event Detection
+
+As an extension to the Random Forest baseline, a 1D Convolutional Neural Network (CNN) was developed to perform binary classification directly on raw seismic waveforms. Unlike the Random Forest model, which relies on hand-engineered features, the CNN learns relevant temporal patterns and representations directly from the waveform data.
+
+### Model Architecture
+The CNN consists of three one-dimensional convolutional layers followed by pooling and fully connected layers:
+- Conv1D: 32 filters
+- Conv1D: 64 filters
+- Conv1D: 128 filters
+- MaxPooling layers for dimensionality reduction
+- GlobalAveragePooling for feature aggregation
+- Dense: 64 units
+- Dropout: 0.3
+- Output: 1 neuron with sigmoid activation for binary classification
+- Total parameters: 43,585 (~170 KB)
+
+This lightweight architecture is designed to capture temporal patterns in seismic signals while maintaining a relatively small computational and memory footprint — an important property for eventual edge deployment.
+
+### Dataset
+The model was trained and evaluated using 236 balanced seismic windows, consisting of:
+- 118 earthquake windows
+- 118 noise windows
+- 400 samples per window
+- Sampling rate: 40 Hz
+- Window duration: 10 seconds
+
+The earthquake events were verified against the USGS earthquake catalog, including the January 9, 2023 M4.7 and M4.9 events. Waveform data were obtained from station IU.FURI in Ethiopia, using data from the EarthScope/IRIS seismic network.
+
+### Results
+
+| Model | Test Accuracy | Input Representation |
+|---|---|---|
+| Random Forest | 82.0% | Hand-engineered features |
+| 1D CNN | 100.0% | Raw seismic waveforms |
+
+The CNN achieved perfect precision and recall (1.00) for both classes on the test set, with zero false positives or false negatives across 48 test samples. Training and validation accuracy both converged by epoch 20, with validation accuracy stabilizing at 100% from epoch 11 onward.
+
+### Limitations and Future Work
+Given the relatively small dataset of 236 windows, the 100% test accuracy should be interpreted cautiously. Additional validation using larger and more diverse seismic datasets would be necessary to assess the model's generalization to unseen earthquake events, stations, and noise conditions.
+
+Future work includes expanding the dataset across multiple seismic stations, incorporating multi-channel (3-component) waveforms, and applying data augmentation to improve generalization.
+
+### Project Files
+- `ethioquake_cnn.keras` — Trained 1D CNN model
+- `training_history.json` — Training and validation history
+- `ethioquake_metrics.json` — Final evaluation metrics
