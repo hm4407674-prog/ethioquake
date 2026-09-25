@@ -1,5 +1,7 @@
 streamlit
-requests
+numpy
 pandas
-folium
-streamlit-folium
+scikit-learn
+obspy
+joblib
+tensorflow
