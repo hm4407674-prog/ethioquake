@@ -96,10 +96,14 @@ if uploaded_file is not None:
 
         if rf_model is not None:
             # Extract hand-engineered features (same as training)
-            features = np.array([[
-                np.sqrt(np.mean(data ** 2)),   # RMS
-                np.var(data),                  # Variance
-                np.max(np.abs(data)),          # Peak amplitude
+        features = np.array([[
+    np.sqrt(np.mean(data ** 2)),                      # RMS
+    np.var(data),                                     # Variance
+    np.max(np.abs(data)),                             # Peak amplitude
+    np.mean(np.abs(data)),                            # Mean absolute
+    np.std(data),                                     # Standard deviation
+    np.max(data) - np.min(data),                      # Peak-to-peak
+]])          # Peak amplitude
             ]])
             try:
                 rf_pred = rf_model.predict(features)[0]
