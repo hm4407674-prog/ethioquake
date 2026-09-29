@@ -2,6 +2,7 @@
 
 AI-Powered Seismic Event Detection for Ethiopia
 
+
 EthioQuake is a machine-learning system designed to distinguish earthquake signals from background seismic noise using real seismic waveform data recorded at the IU.FURI station in Ethiopia.
 
 The project combines seismic signal processing, feature engineering, and machine learning to create an end-to-end earthquake detection pipeline—from raw waveform data to model predictions and an interactive web application.
